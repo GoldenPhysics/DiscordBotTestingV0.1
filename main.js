@@ -13,9 +13,7 @@ client.on("ready", () => {
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong! Message time: ' + client.pings[0]);
-    for (let ping of client.pings) {
-      console.log("ping time is: " + ping);
-    }
+    console.log("ping time: " + client.ping);
   }
 });
 
