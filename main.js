@@ -32,7 +32,7 @@ client.on("message", msg => {
 
   //ping command
   if (msg.content === "ping") {
-    let originalTime = msg.createdAt();
+    let originalTime = msg.createdAt;
     msg.reply("Pong! Response time is: " + (Date.now() - originalTime));
   }
 });
