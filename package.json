@@ -1,0 +1,22 @@
+{
+  "name": "discordbottestingv0.1",
+  "version": "0.1.0",
+  "description": "First Test of discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoldenPhysics/DiscordBotTestingV0.1.git"
+  },
+  "author": "GoldenPhysics",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoldenPhysics/DiscordBotTestingV0.1/issues"
+  },
+  "homepage": "https://github.com/GoldenPhysics/DiscordBotTestingV0.1#readme",
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  }
+}
