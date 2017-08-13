@@ -18,6 +18,10 @@ const prefix = "!";
 client.on("ready", () => {
   console.log("Report: Ready");
 
+  client.guilds.forEach(function(guild, id) {
+    console.log("testing");
+    guild.defaultChannel.send("This test bot has started! I'M ALIVE!")
+  });
 });
 
 //message handling
@@ -33,7 +37,7 @@ client.on("message", msg => {
   //ping command
   if (msg.content === "ping") {
     let originalTime = msg.createdTimestamp;
-    msg.reply("Pong! Response time is: " + (Date.now() - originalTime));
+    msg.channel.send("Pong! Response time is: " + (Date.now() - originalTime));
   }
 });
 
