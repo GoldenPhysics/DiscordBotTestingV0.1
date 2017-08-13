@@ -22,10 +22,18 @@ client.on("ready", () => {
 
 //message handling
 client.on("message", msg => {
-  if (msg.content.startsWith() !== prefix) return;
+  //check for bot prefix
+  if (!msg.content.startsWith(prefix)) return;
+
+  //take off the prefix, already checked for it
   msg.content = msg.content.substr(1);
+
+  //handle commands
+
+  //ping command
   if (msg.content === "ping") {
-    msg.reply("Pong!");
+    let originalTime = msg.createdAt();
+    msg.reply("Pong! Response time is: " + (Date.now() - originalTime));
   }
 });
 
