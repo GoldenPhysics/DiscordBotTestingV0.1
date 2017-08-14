@@ -2,7 +2,7 @@ console.log("Starting bot");
 
 //require discord.js dependency
 const Discord = require("discord.js");
-console.log("discord.js successfully required")
+console.log("discord.js successfully required");
 
 //create the client
 const client = new Discord.Client();
