@@ -6,7 +6,7 @@ blockQuote = function(str) {
   return ("```\n" + str + "\n```");
 }
 
-exports.help = function(msg) {
+exports.help = function() {
   return blockQuote(helpIntro +
       "Bot Admin commands:\
       !help public (not implemented):\
