@@ -10,15 +10,15 @@ blockQuote = function(str) {
 exports.help = function() {
   return blockQuote(helpIntro +
 "Bot Admin commands:\n\
-!help public (not implemented):\n\
-  \tdisplays this help text in the channel the request was made from.\n\
+  !help public (not implemented):\n\
+    displays this help text in the channel the request was made from.\n\
 \n\
 Bot User Commands:\n\
-!help (not implemented):\n\
-\tSends the user this help text in a direct message\n\
-!ping:\n\
-\tBot replys \"Pong!\" and the time it took to reply.\n\
-!on-call:\n\
-\tToggles the on-call role for the command sender.\n\
-\tOnly works if the server has a role called \"On-call\".")
+  !help (not implemented):\n\
+    Sends the user this help text in a direct message\n\
+  !ping:\n\
+    Bot replys \"Pong!\" and the time it took to reply.\n\
+  !on-call:\n\
+    Toggles the on-call role for the command sender.\n\
+    Only works if the server has a role called \"On-call\".")
 }
