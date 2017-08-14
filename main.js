@@ -36,8 +36,8 @@ client.on("ready", () => {
 
     if (speakChannel) {
       speakChannel.send("This test bot has started! I'M ALIVE!");
-      speakChannel.send(
-          "This server has an `On-call` role: " + hasOnCallRole);
+      //speakChannel.send(
+      //    "This server has an `On-call` role: " + hasOnCallRole);
     }
   });
 });
