@@ -98,7 +98,7 @@ client.on("message", msg => {
     }
   } //end on-call command
 
-  if (msg.content("help")) {
+  if (msg.content === "help")) {
     let DM = msg.author.dmChannel;
     if (!DM) {
       msg.author.createDM().then(DM => DM.send(helpClass.help()));
