@@ -96,6 +96,13 @@ client.on("message", msg => {
       console.log("Author: " + msg.guild.member(msg.author).displayName);
       */
     }
+  } //end on-call command
+
+  if (msg.content("help")) {
+    let DM = msg.author.dmChannel;
+    if (!DM) {
+      msg.author.createDM().then(DM => DM.send(helpClass.help()));
+    }
   }
 });
 
