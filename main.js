@@ -63,7 +63,7 @@ client.on("message", msg => {
   //on-call command
   if (msg.content === "on-call") {
     let onCallRole =
-        msg.guild.roles.find(function(role) {
+        msg.guild.roles.find(role => {
           return role.name.toLowerCase() === "on-call";
         });
 
@@ -77,7 +77,7 @@ client.on("message", msg => {
     //if the author is a member of the server
     if (member) {
       //console.log("author is a member of the server");
-      let onCall = member.roles.find(function(role) {
+      let onCall = member.roles.find(role => {
           return role.name.toLowerCase() === "on-call";
         });
 
