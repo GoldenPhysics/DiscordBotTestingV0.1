@@ -21,7 +21,7 @@ client.on("ready", () => {
   console.log("Report: Ready");
 
   client.guilds.forEach(function(guild, id) {
-    //guild.defaultChannel.send("This test bot has started! I'M ALIVE!");
+
     let hasOnCallRole = guild.roles.exists(function(role) {
       return role.name.toLowerCase() === "on-call";
     });
