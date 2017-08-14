@@ -19,5 +19,5 @@ exports.help = function() {
         Bot replys \"Pong!\" and the time it took to reply.\
       !on-call:\
         Toggles the on-call role for the command sender.\
-        Only works if the server has a role called \"On-call\"."))
+        Only works if the server has a role called \"On-call\".")
 }
