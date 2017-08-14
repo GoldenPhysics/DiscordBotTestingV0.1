@@ -1,15 +1,13 @@
-const helpIntro = "This help command sends the list of commands via DM to the requester.\
+const helpIntro = "This help command posts a list of commands.\
     This list is not necessarily complete or acurate.\
-    Some commands may not yet be implemented.\
-    \
-    ";
+    Some commands may not yet be implemented.\n\n";
 
 blockQuote = function(str) {
   return ("```\n" + str + "\n```");
 }
 
 exports.help = function(msg) {
-  msg.channel.send(blockQuote(helpIntro +
+  return blockQuote(helpIntro +
       "Bot Admin commands:\
       !help public (not implemented):\
         displays this help text in the channel the request was made from.\
