@@ -28,7 +28,7 @@ client.on("ready", () => {
     //console.log("in a guild");
 
     let speakChannel = guild.channels.find(function(channel) {
-      let channelPermissions = channel.permissionsFor(client.user)
+      let channelPermissions = channel.permissionsFor(client.user);
       //console.log(channelPermissions);
       if (channelPermissions) {
         return channelPermissions.has("SEND_MESSAGES");
