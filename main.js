@@ -4,6 +4,8 @@ console.log("Starting bot");
 const Discord = require("discord.js");
 console.log("discord.js successfully required");
 
+const testClass = require("./test.js");
+
 //create the client
 const client = new Discord.Client();
 console.log("client successfully created");
