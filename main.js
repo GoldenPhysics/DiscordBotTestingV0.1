@@ -11,7 +11,14 @@ const client = new Discord.Client();
 console.log("client successfully created");
 
 //token for loging in
-const token = "MzQ2MzM1ODYyMTI2MDE4NTYx.DHIczA.6J2mpWP9X99QyAIVI57U2yjHcNc";
+let fs = require("fs");
+const token = fs.readFile("./bot.json", (err, data) => {
+  JSON.parse(data, (key, value) => {
+    if (key === "token") {
+      client.login(value);
+    }
+  });
+});
 
 //other program constants
 const prefix = "!";
@@ -105,6 +112,3 @@ client.on("message", msg => {
     }
   }
 });
-
-//login
-client.login(token);
